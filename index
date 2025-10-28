@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Clémence Trizac-Mattern</title>
+</head>
+
+<body>
+    <header>
+        <h1>Clémence Trizac-Mattern</h1>
+        <aside>About me.</aside>
+    </header>
+        <p>Bienvenue sur la page principale</p>
+</body>
