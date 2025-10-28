@@ -1,24 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Motherfucking Website</title>
+	<meta charset="utf-8">
+	<title>CV de Clémence Trizac-Mattern</title>
+    <meta name="description" content="Découvrez une démo de CV en HTML et CSS, entièrement responsive, idéale pour s'adapter à tous les écrans. Inspirez-vous pour créer un CV moderne et professionnel." />
+	<meta name="author" content="Clémence Trizac-Mattern">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Clémence Trizac-Mattern</h1>
-        <aside>About me.</aside>
+        <ul class="container">
+            <li>
+                <h1>
+                    <span id="prenom">Clémence</span>
+                    <span id="nom">Trizac-Mattern</span>
+                </h1>
+            </li>
+            <li>
+                <strong>Adresse</strong>
+                28 place Dupuy<br>31 000 Toulouse
+            </li>
+            <li>
+                <strong>Téléphone</strong>
+                06.46.55.90.18
+            </li>
+            <li>
+                <strong>Mail</strong>
+                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="076a68696a666e6b476a666e6b296175">[email&#160;protected]</a>
+            </li>
+        </ul>
     </header>
-        <h1>In English</h1>
-         <a href="https://www.w3schools.com">My CV</a> 
-         <a href="https://www.w3schools.com">My Presentation Video</a>
-         <a href="https://www.w3schools.com">My LinkdIn</a>
-        <hr>
-        <h1>In French</h1> 
-        <a href="https://www.w3schools.com">My CV</a> 
-         <a href="https://www.w3schools.com">My Presentation Video</a>
-         <a href="https://www.w3schools.com">My LinkdIn</a>
-</body>
+    
+    <main class="container">
+        
+        <aside>
+        
+            <img src="photo.jpg" alt="Photo du cv"> 
+            
+            <article>
+                <h2>Compétences</h2> 
+                <p>
+                    <br>
+                    Graphiste<br>
+                </p> 
+            </article>
+            
+            <article>
+                <h2>Langues</h2>
+                <p>
+                    Français (native)<br>
+                    Anglais B2<br>
+                    Allemand A1 <br>
+                    Japonnais (en cours d'apprentissage)
+                </p>
+            </article>
+            
+            <article>
+                <h2>Centre d'intérêt</h2>
+                <p class="noBorder">
+                    Informatique<br>
+                    <li>Python</li>
+                    <li>Developpement Web</li>
+                    Musique <br>
+                    <li>Saxophone (actuellement à la fanfare de l'école)</li>
+                    <li>Chorale (participation au collège)</li>
+                    Sport<br>
+                    <li>Tennis pendant 5 ans (participation à des tournois, 30-4 au meilleur)</li>
+                    <li>Natation pendant 6 ans (loisirs)</li>
+                </p>
+            </article>
+            
+        </aside>
+        
+        <section>
+            <div class="container">
+                <article>
+                    <h2>Présentation</h2>
+                    <p>Actuellement en train de commencer mes études en Sciences du Numérique à l'ENSEEIHT, 
+                        je suis passionnée par l'informatique théorique.
+
+                    </p>
+                </article>
+                <article>
+                    <h2>Formations et diplômes</h2>
+                    <ul>
+                        <li class="exp">
+                            <span class="periode">2025 - (2028)</span>
+                            <span class="desc">Diplôme d'ingénieur en Sciences du Numérique à l'ENSEEIHT, Toulouse (31000).</span>
+                        </li>
+                        <li class="exp">
+                            <span class="periode">2023 - 2025</span>
+                            <span class="desc">Classe Préparatoire aux Grandes Ecoles en MP (Maths et Physique)/MPSI à Lycée Lakanal, Sceaux (92330)</span>
+                        </li>
+                        <li class="exp">
+                            <span class="periode">2020-2023</span>
+                            <span class="desc">Baccalauréat Génarale | Mathématiques, Physique-Chimie, option Maths Expertes | Mention Très Bien | Lycée Villaroy, Guyancourt (78297) </span>
+                        </li>
+                        <li class="exp">
+                            <span class="periode">2016-2020</span>
+                            <span class="desc">Brevet des Collèges | Collège Hélène Boucher, Voisins le Bx</span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul class="container">
+            <li></li>
+            <li>
+                <img src="LinkedIn_icon.svg" alt="logo LinkedIn">
+                <a href="https://www.linkedin.com/in/cl%C3%A9mence-trizac-mattern-91b200387/">My LinkdIn</a>
+            </li>
+        </ul>
+    </footer>
+    
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+
+</html>
