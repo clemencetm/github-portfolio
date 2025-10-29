@@ -1,0 +1,13 @@
+body {
+    background-image: url("bleud.png");
+    background-repeat: repeat-x;
+    
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+p{
+    margin-top: 10px;
+}
