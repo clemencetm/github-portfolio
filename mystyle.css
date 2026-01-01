@@ -1,8 +1,8 @@
-body {
+/* body {
     background-image: url("bleud.png");
     background-repeat: repeat-x;
     
-}
+}*/
 
 h1 {
     margin-left: 20px;
@@ -10,4 +10,20 @@ h1 {
 
 p{
     margin-top: 10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    background: #222;
+}
+
+.tabs a {
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+.tabs a:hover {
+    background: #444;
 }

@@ -1,28 +1,212 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="mystyle.css">
     <title>Clémence Trizac-Mattern</title>
-</head>
+    <style>
+        /* Styles de base pour les onglets */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        nav.tabs {
+            display: flex;
+            background-color: #333;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav.tabs li {
+            margin: 0;
+        }
+
+        nav.tabs li button {
+            background: none;
+            border: none;
+            color: white;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        nav.tabs li button:hover {
+            background-color: #555;
+        }
+
+        section {
+            display: none; /* Toutes les sections cachées par défaut */
+            padding: 20px;
+        }
+
+        section.active {
+            display: block; /* La section active est affichée */
+        }
+
+        .photo img {
+        position: fixed;   /* fixe la photo sur l’écran */
+        top: 40%;          /* centre verticalement */
+        right: 20px;          /* colle à droite */
+        transform: translateY(-40%); /* ajuste le centrage vertical exact */
+        width: 400px;      /* taille de la photo */
+        height: auto;      
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        /* Style pour sous-onglets si besoin */
+        .sub-tabs {
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .sub-tabs button {
+            background: #666;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .sub-tabs button.active {
+            background: #999;
+        }
+    </style>
+</head>
 <body>
-    <header>
-        <h1>Bienvenue sur le site de Clémence Trizac-Mattern</h1>
-    
-    </header>
-        <p></p>
-        <a href="https://www.linkedin.com/in/cl%C3%A9mence-trizac-mattern-91b200387/">LinkedIn</a>
-        <br>
-        <p></p>
-        <a href="https://clemencetm.github.io/github-portfolio/cv_en.html">CV in English</a> 
-        <br>
-        <p></p>
-        <a href="https://clemencetm.github.io/github-portfolio/cv_fr.html">CV en Français</a> 
-        <br>
-        <p></p>
-        <a href="https://youtu.be/ovU7qRpUXTU">Vidéo de présentation en Japonnais</a> 
-        
+
+    <!-- MENU PRINCIPAL -->
+    <nav class="tabs">
+        <li><button data-target="Welcome">Welcome</button></li>
+        <li><button data-target="Engineering-course">Engineering course</button></li>
+        <li><button data-target="Sustainability-Civic-Engagement">Sustainability & Civic Engagement</button></li>
+        <li><button data-target="Sport-other-activities">Sport & other activities</button></li>
+        <li><button data-target="Career-Development">Career Development</button></li>
+    </nav>
+
+    <!-- SECTIONS -->
+    <section id="Welcome" class="active">
+        <p>Currently beginning my studies in Digital Sciences at ENSEEIHT,
+                    I am passionate about theoretical computer science.</p>
+        <a href="https://www.linkedin.com/in/cl%C3%A9mence-trizac-mattern-91b200387/">My LinkedIn</a>
+        <div class="photo">
+            <img src="Moi.jpg" alt="moi" width="150"> 
+        </div>
+    </section>
+
+    <section id="Engineering-course">
+        <header>Engineering course</header>
+        <p>This section details my progress through my Engineering Master's Degree. It will be regularly updated.</p>
+        <h1>Semester 5 (Year 1)</h1>
+        <ul>
+            <li>Imperative programming</li>
+            <li>Numerical analysis & Statistics</li>
+            <li>Integration and Applications & Probabilities</li>
+            <li>Automatic Control & Data Analysis</li>
+            <li>Scientific modeling & Architecture</li>
+        </ul>
+    </section>
+
+    <section id="Sustainability-Civic-Engagement">
+        <h1>Sustainability & Civic Engagement</h1>
+        <h2>Clean Walk</h2>
+    </section>
+
+    <section id="Sport-other-activities">
+        <h1>Sport and other activities</h1>
+        <h2>Tennis</h2>
+        <p>I played tennis for 5 years, participating in several individual and team competitions which led me to a ranking of 30/3.</p>
+        <h2>Swimming</h2>
+        <p>I went swimming for 7 years to maintain my physical fitness</p>
+        <h2>Saxophone</h2>
+        <p>I am currently a member of the school band, which organizes events that bring people together and create a cheerful atmosphere.</p>
+        <img src="fanfare.jpg" alt="Photo de la fanfare" width="800"> 
+    </section>
+
+    <section id="Career-Development">
+        <!-- Sous-onglets pour Career Development -->
+        <div class="sub-tabs">
+            <button data-target="Internship" class="active">Internship</button>
+            <button data-target="PPP">Personal Professional Project</button>
+        </div>
+
+        <section id="Internship" class="active">
+            <h1>Internship</h1>
+            <h2>In Japan for the first year internship</h2>
+            <p>At the end of the year, I will be doing a one-month internship in Japan organized by the school.</p>
+        </section>
+
+        <section id="PPP">
+            <h1>Personal Professional Project</h1>
+            <h2>CVs</h2>
+            <p>
+                For my CV in english, please click
+                <a href="https://clemencetm.github.io/github-portfolio/cv_en.html">here</a>
+            </p>
+            <p>
+                For my CV in french, please click
+                <a href="https://clemencetm.github.io/github-portfolio/cv_fr.html">here</a>
+            </p> 
+            <h2>Elevator Speech</h2>
+            <p>
+                Here is a quick elevator-pitch if you want to discover me in less than 3 minutes. Click
+                <a href ="https://youtu.be/X_BKQWQDECA">here</a>
+            </p>
+            <h2>Presentation in Japanese</h2>
+            <p>Here is a quick introduction in Japanese. Please note that I am a beginner; I started learning Japanese at the beginning of the year.
+            <a href="https://youtu.be/ovU7qRpUXTU">Japanese Presentation</a></p>
+        </section>
+    </section>
+
+    <!-- SCRIPT JAVASCRIPT POUR LES ONGLETS -->
+    <script>
+        // Onglets principaux
+        const tabButtons = document.querySelectorAll('nav.tabs button');
+        const sections = document.querySelectorAll('body > section');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.dataset.target;
+
+                // Afficher la section correspondante et cacher les autres
+                sections.forEach(sec => {
+                    if(sec.id === targetId) {
+                        sec.classList.add('active');
+                    } else {
+                        sec.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // Sous-onglets Career Development
+        const subTabButtons = document.querySelectorAll('.sub-tabs button');
+        const subSections = document.querySelectorAll('#Career-Development > section');
+
+        subTabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.dataset.target;
+
+                // Activer le bouton sélectionné
+                subTabButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                // Afficher la section correspondante et cacher les autres
+                subSections.forEach(sec => {
+                    if(sec.id === targetId) {
+                        sec.classList.add('active');
+                    } else {
+                        sec.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
+</html>
